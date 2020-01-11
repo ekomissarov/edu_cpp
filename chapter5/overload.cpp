@@ -3,7 +3,7 @@ using namespace std;
 // передача переменных по значению (создаются копии на стеке либо копии через регистры)
 void repchar();
 void repchar(char);
-void repchar(char, int, char='y');
+void repchar(char, int, char='y'); // параметры по умолчанию указываются в прототипе
 
 int main()
 {
