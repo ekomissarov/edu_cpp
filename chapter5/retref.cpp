@@ -14,5 +14,9 @@ int main()
 
 int& setx()
 {
+    // return 3; // ошибка
+    // int i = 3;
+    // return i; // ошибка т.к. переменная automatic
+
     return x;
 }
