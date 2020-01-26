@@ -16,14 +16,14 @@ class Distance
             cout<<"Inp feets: "; cin>>feet;
             cout<<"Inp inches: "; cin>>inches;
         }
-        void showdist()
+        void showdist()const
         {
             cout<<feet<<"\' - "<<inches<<"\''"<<endl;
         }
-        void add_dist(Distance, Distance);
+        void add_dist(const Distance&, const Distance&);
 };
 
-void Distance::add_dist(Distance d2, Distance d3)
+void Distance::add_dist(const Distance& d2, const Distance& d3)
 {
     inches = d2.inches + d3.inches; // private переменные доступны
     feet=0;
