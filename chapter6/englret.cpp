@@ -48,4 +48,15 @@ int main()
     cout<<"\ndist3 = "; dist3.showdist();
     cout<<endl;
     // private переменные dist1.feet и т.п. не доступны
+
+    Distance arr[5];
+
+    void* ptr = arr;
+    cout<<"(Distance []) value: -"<<"\taddr: "<<arr<<"\tsize: "<<sizeof(arr)<<endl;
+    cout<<sizeof(int)<<" + "<<sizeof(float)<<endl;
+    for (int i=0; i<5; i++) 
+    {
+        cout<<&arr[i]<<endl;
+        arr[i].showdist();
+    }
 }

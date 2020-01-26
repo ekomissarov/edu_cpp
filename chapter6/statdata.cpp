@@ -8,7 +8,7 @@ class foo
     public:
         foo()
         {count++;}
-        int getcount()
+        int getcount()const
         {return count;}
 };
 
