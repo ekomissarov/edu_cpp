@@ -12,7 +12,7 @@ class foo
         {return count;}
 };
 
-int foo::count = 0;
+int foo::count = 0; // выделение память не должно быть в определении класса
 
 int main()
 {
